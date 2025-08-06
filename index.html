@@ -10,6 +10,27 @@
     Analytics is ready to track all visitors and conversions!
     -->
     
+    <!-- SEO Meta Tags -->
+    <title>🎺 The Practice Mute That Changed Everything - Real Mute | 50dB Silent Practice</title>
+    <meta name="description" content="Revolutionary practice mute with 50dB noise reduction. Maintain perfect intonation while practicing silently. Free Ultimate Practice Mute Buyer's Guide.">
+    <meta name="keywords" content="practice mute, silent practice, trumpet mute, brass mute, apartment practice, 50db reduction">
+    <meta name="author" content="Real Mute Technologies">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="🎺 The Practice Mute That Changed Everything - Real Mute">
+    <meta property="og:description" content="Get the Free Ultimate Practice Mute Buyer's Guide - Why 90% of mutes ruin your playing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/realmute-landing">
+    <meta property="og:image" content="https://yourusername.github.io/realmute-landing/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🎺 The Practice Mute That Changed Everything">
+    <meta name="twitter:description" content="Revolutionary 50dB silent practice technology. Free buyer's guide reveals why 90% of mutes ruin your playing.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎺</text></svg>">
+    
     <!-- Google Analytics 4 - ACTIVE AND READY -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVR9BWJS97"></script>
     <script>
@@ -675,7 +696,10 @@
             <p class="form-subtitle">Join 2,847+ musicians who discovered the truth about practice mutes</p>
             
             <div class="form-container">
-                <form id="leadForm" onsubmit="handleAdvancedSubmit(event)">
+                <form name="practice-guide-leads" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thank-you">
+                    <!-- Hidden field required by Netlify -->
+                    <input type="hidden" name="form-name" value="practice-guide-leads" />
+                    
                     <div class="form-group">
                         <label for="email">📧 Email Address</label>
                         <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
@@ -699,7 +723,10 @@
                         </select>
                     </div>
                     
-                    <button type="submit" class="submit-btn" id="submitBtn">
+                    <!-- Netlify reCAPTCHA -->
+                    <div data-netlify-recaptcha="true"></div>
+                    
+                    <button type="submit" class="submit-btn">
                         🚀 Send Me The Free Guide (Takes 30 Seconds)
                     </button>
                 </form>
