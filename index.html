@@ -4,93 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>🎺 The Practice Mute That Changed Everything - Real Mute | 50dB Silent Practice</title>
-    <meta name="description" content="Revolutionary practice mute with 50dB noise reduction. Maintain perfect intonation while practicing silently. Free Ultimate Practice Mute Buyer's Guide.">
-    <meta name="keywords" content="practice mute, silent practice, trumpet mute, brass mute, apartment practice, 50db reduction">
-    <meta name="author" content="Real Mute Technologies">
+    <!-- 
+    ✅ GOOGLE ANALYTICS CONFIGURED!
+    Your Measurement ID: G-DVR9BWJS97
+    Analytics is ready to track all visitors and conversions!
+    -->
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="🎺 The Practice Mute That Changed Everything - Real Mute">
-    <meta property="og:description" content="Get the Free Ultimate Practice Mute Buyer's Guide - Why 90% of mutes ruin your playing">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/realmute-landing">
-    <meta property="og:image" content="https://yourusername.github.io/realmute-landing/og-image.jpg">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="🎺 The Practice Mute That Changed Everything">
-    <meta name="twitter:description" content="Revolutionary 50dB silent practice technology. Free buyer's guide reveals why 90% of mutes ruin your playing.">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎺</text></svg>">
-    
-    <!-- Analytics Setup - Replace IDs when ready -->
-    <script>
-        // Global tracking function
-        window.trackEvent = function(eventName, parameters = {}) {
-            console.log(`📊 Event: ${eventName}`, parameters);
-            
-            // Google Analytics (when configured)
-            if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, parameters);
-            }
-            
-            // Facebook Pixel (when configured)  
-            if (typeof fbq !== 'undefined') {
-                fbq('trackCustom', eventName, parameters);
-            }
-            
-            // Custom tracking endpoint (optional)
-            if (window.customTracker) {
-                window.customTracker(eventName, parameters);
-            }
-        };
-    </script>
-    
-    <!-- Google Analytics 4 - UNCOMMENT AND REPLACE ID WHEN READY -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <!-- Google Analytics 4 - ACTIVE AND READY -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVR9BWJS97"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID', {
+        gtag('config', 'G-DVR9BWJS97', {
             page_title: 'Real Mute Landing Page',
-            page_location: window.location.href
+            page_location: window.location.href,
+            send_page_view: true
+        });
+        
+        // Enhanced measurement events
+        gtag('config', 'G-DVR9BWJS97', {
+            custom_map: {
+                'custom_parameter': 'practice_mute_guide'
+            }
         });
     </script>
-    -->
-    
-    <!-- Facebook Pixel - UNCOMMENT AND REPLACE ID WHEN READY -->
-    <!--
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'YOUR_PIXEL_ID');
-        fbq('track', 'PageView');
-    </script>
-    -->
-    
-    <!-- Hotjar - UNCOMMENT AND REPLACE ID WHEN READY -->
-    <!--
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:YOUR_HOTJAR_ID,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-    -->
 
     <style>
         :root {
@@ -949,12 +887,13 @@
             }
             
             trackEvent(eventName, parameters = {}) {
-                // Use global tracking function
-                if (typeof window.trackEvent === 'function') {
-                    window.trackEvent(eventName, parameters);
-                } else {
-                    console.log(`📊 Event: ${eventName}`, parameters);
+                // Google Analytics 4 Event Tracking
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', eventName, parameters);
                 }
+                
+                // Console log for debugging
+                console.log(`📊 Analytics Event: ${eventName}`, parameters);
             }
             
             showSuccessMessage() {
@@ -998,6 +937,16 @@
                     form_interactions: landingPage.formInteractions
                 });
                 
+                // Google Analytics Lead Event
+                gtag('event', 'generate_lead', {
+                    event_category: 'conversion',
+                    event_label: 'practice_guide_request',
+                    value: 47,
+                    currency: 'USD',
+                    custom_parameter: 'practice_mute_guide',
+                    challenge_type: challenge
+                });
+
                 // Facebook Pixel Lead Event (when configured)
                 if (typeof fbq !== 'undefined') {
                     fbq('track', 'Lead', {
@@ -1097,6 +1046,96 @@
                 scroll_depth: landingPage.scrollDepth,
                 form_interactions: landingPage.formInteractions
             });
+        });
+
+        // Enhanced Google Analytics Event Tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track form field interactions
+            const formFields = ['email', 'firstname', 'challenge'];
+            formFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (field) {
+                    field.addEventListener('focus', function() {
+                        gtag('event', 'form_field_focus', {
+                            event_category: 'form_interaction',
+                            event_label: fieldId,
+                            custom_parameter: 'practice_mute_guide'
+                        });
+                    });
+                    
+                    field.addEventListener('blur', function() {
+                        if (field.value.length > 0) {
+                            gtag('event', 'form_field_complete', {
+                                event_category: 'form_interaction',
+                                event_label: fieldId,
+                                custom_parameter: 'practice_mute_guide'
+                            });
+                        }
+                    });
+                }
+            });
+
+            // Track button clicks
+            document.querySelectorAll('button, .submit-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'button_click', {
+                        event_category: 'engagement',
+                        event_label: this.textContent.substring(0, 50),
+                        custom_parameter: 'practice_mute_guide'
+                    });
+                });
+            });
+
+            // Track scroll milestones with GA4
+            let scrollMilestones = [25, 50, 75, 90];
+            let trackedMilestones = [];
+            
+            window.addEventListener('scroll', function() {
+                let scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                
+                scrollMilestones.forEach(milestone => {
+                    if (scrollPercent >= milestone && !trackedMilestones.includes(milestone)) {
+                        trackedMilestones.push(milestone);
+                        gtag('event', 'scroll', {
+                            event_category: 'engagement',
+                            event_label: milestone + '_percent',
+                            value: milestone,
+                            custom_parameter: 'practice_mute_guide'
+                        });
+                    }
+                });
+            });
+
+            // Track time on page milestones
+            [30, 60, 120, 300].forEach(seconds => {
+                setTimeout(() => {
+                    gtag('event', 'timing', {
+                        event_category: 'engagement',
+                        event_label: seconds + '_seconds_on_page',
+                        value: seconds,
+                        custom_parameter: 'practice_mute_guide'
+                    });
+                }, seconds * 1000);
+            });
+
+            // Track exit intent popup interactions
+            const exitPopup = document.getElementById('exitPopup');
+            if (exitPopup) {
+                const observer = new MutationObserver(function(mutations) {
+                    mutations.forEach(function(mutation) {
+                        if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                            if (exitPopup.style.display === 'flex') {
+                                gtag('event', 'exit_intent_popup_shown', {
+                                    event_category: 'conversion_opportunity',
+                                    event_label: 'exit_intent_triggered',
+                                    custom_parameter: 'practice_mute_guide'
+                                });
+                            }
+                        }
+                    });
+                });
+                observer.observe(exitPopup, { attributes: true });
+            }
         });
     </script>
 </body>
