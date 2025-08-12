@@ -1,1169 +1,767 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- 
-    ✅ GOOGLE ANALYTICS CONFIGURED!
-    Your Measurement ID: G-DVR9BWJS97
-    Analytics is ready to track all visitors and conversions!
-    -->
-    
-    <!-- SEO Meta Tags -->
-    <title>🎺 The Practice Mute That Changed Everything - Real Mute | 50dB Silent Practice</title>
-    <meta name="description" content="Revolutionary practice mute with 50dB noise reduction. Maintain perfect intonation while practicing silently. Free Ultimate Practice Mute Buyer's Guide.">
-    <meta name="keywords" content="practice mute, silent practice, trumpet mute, brass mute, apartment practice, 50db reduction">
-    <meta name="author" content="Real Mute Technologies">
-    
+    <title>The Ultimate Practice Mute Buyer's Guide - Real Mute</title>
+
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="🎺 The Practice Mute That Changed Everything - Real Mute">
-    <meta property="og:description" content="Get the Free Ultimate Practice Mute Buyer's Guide - Why 90% of mutes ruin your playing">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/realmute-landing">
-    <meta property="og:image" content="https://yourusername.github.io/realmute-landing/og-image.jpg">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="🎺 The Practice Mute That Changed Everything">
-    <meta name="twitter:description" content="Revolutionary 50dB silent practice technology. Free buyer's guide reveals why 90% of mutes ruin your playing.">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎺</text></svg>">
-    
-    <!-- Google Analytics 4 - ACTIVE AND READY -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DVR9BWJS97"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-DVR9BWJS97', {
-            page_title: 'Real Mute Landing Page',
-            page_location: window.location.href,
-            send_page_view: true
-        });
-        
-        // Enhanced measurement events
-        gtag('config', 'G-DVR9BWJS97', {
-            custom_map: {
-                'custom_parameter': 'practice_mute_guide'
-            }
-        });
-    </script>
+    <meta property="og:title" content="The Ultimate Practice Mute Buyer's Guide">
+    <meta property="og:description" content="Why 90% of Practice Mutes Are Silently Ruining Your Playing">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/FFD700/000000?text=Real+Mute+Guide">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="article">
+
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --primary-color: #4facfe;
-            --secondary-color: #00f2fe;
-            --accent-color: #e53e3e;
-            --text-dark: #2d3748;
-            --text-light: #718096;
-            --success-color: #38a169;
-            --warning-color: #ed8936;
-            --bg-light: #f7fafc;
+            --luxury-gold: #FFD700;
+            --dark-gold: #B8860B;
+            --accent-gold: #FFA500;
+            --royal-blue: #0A0F2B;
+            --deep-blue: #1A1F3A;
+            --medium-blue: #2A3F5F;
+            --premium-white: #FFFFFF;
+            --pearl-white: #F8FAFE;
+            --text-royal: #0A0F2B;
+            --text-dark: #1A1F3A;
+            --text-medium: #4A5568;
+            --emerald: #10B981;
+            --ruby: #EF4444;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.8;
+            color: var(--text-royal);
+            background: linear-gradient(135deg, #f0f4f8 0%, #d6e8f5 50%, #b8d4ea 100%);
+            font-size: 16px;
             overflow-x: hidden;
         }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Loading Animation */
-        .loading-overlay {
+
+        /* Floating Elements Background */
+        body::before {
+            content: '';
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255,255,255,0.95);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
-        }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid var(--primary-color);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        /* Header Section */
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
-            padding: 40px 0;
-            position: relative;
-        }
-        
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 165, 0, 0.08) 0%, transparent 50%);
             pointer-events: none;
+            z-index: -1;
         }
-        
-        .floating-note {
-            position: absolute;
-            font-size: 2em;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        .floating-note:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
-        .floating-note:nth-child(2) { top: 20%; right: 15%; animation-delay: 2s; }
-        .floating-note:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 4s; }
-        .floating-note:nth-child(4) { bottom: 20%; right: 10%; animation-delay: 1s; }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
-        }
-        
-        .main-headline {
-            font-size: clamp(2.5em, 5vw, 4em);
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            animation: slideInUp 1s ease-out;
-        }
-        
-        .sub-headline {
-            font-size: clamp(1.2em, 2.5vw, 1.4em);
-            margin-bottom: 30px;
-            opacity: 0.95;
-            animation: slideInUp 1s ease-out 0.3s both;
-        }
-        
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Content Sections */
-        .content-box {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            position: relative;
+
+        /* Luxury Container */
+        .guide-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: var(--premium-white);
+            box-shadow: 
+                0 60px 120px rgba(0, 0, 0, 0.15),
+                0 25px 50px rgba(0, 0, 0, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            border-radius: 40px;
             overflow: hidden;
-            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+            border: 1px solid rgba(255, 215, 0, 0.2);
         }
-        
-        .content-box::before {
+
+        .guide-container::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            height: 6px;
+            background: linear-gradient(90deg, var(--luxury-gold) 0%, var(--accent-gold) 50%, var(--luxury-gold) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 4s ease-in-out infinite;
         }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: -200% 0; }
+            50% { background-position: 200% 0; }
         }
-        
-        .hero-text {
-            font-size: 1.2em;
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        
-        .problems, .benefits {
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .problems {
-            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
-            border-left: 5px solid var(--accent-color);
-        }
-        
-        .benefits {
-            background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
-            border-left: 5px solid var(--success-color);
-        }
-        
-        .problems ul, .benefits ul {
-            list-style: none;
-            margin: 15px 0;
-        }
-        
-        .problems li, .benefits li {
-            margin: 15px 0;
-            font-size: 1.1em;
-            display: flex;
-            align-items: center;
-            animation: slideInLeft 0.6s ease-out;
-        }
-        
-        .problems li::before, .benefits li::before {
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-        
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        /* Advanced Form Section */
-        .form-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+
+        /* Royal Header */
+        .royal-header {
+            background: linear-gradient(135deg, var(--royal-blue) 0%, var(--deep-blue) 50%, var(--medium-blue) 100%);
             color: white;
             text-align: center;
-            padding: 50px 40px;
-            border-radius: 20px;
-            margin: 40px 0;
+            padding: 100px 60px;
             position: relative;
             overflow: hidden;
         }
-        
-        .form-section::before {
+
+        .royal-header::before {
             content: '';
             position: absolute;
             top: -50%;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 215, 0, 0.1), transparent, rgba(255, 165, 0, 0.1), transparent);
+            animation: rotate 25s linear infinite;
+            pointer-events: none;
         }
-        
+
         @keyframes rotate {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
-        .form-container {
-            max-width: 500px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .form-title {
-            font-size: 2.2em;
-            margin-bottom: 25px;
-            font-weight: bold;
-        }
-        
-        .form-subtitle {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-            text-align: left;
-            position: relative;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 18px 20px;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1em;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            background: rgba(255,255,255,0.95);
-        }
-        
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            background: white;
-        }
-        
-        .submit-btn {
-            background: linear-gradient(135deg, var(--accent-color) 0%, #c53030 100%);
-            color: white;
-            padding: 20px 50px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.4em;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(229, 62, 62, 0.4);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .submit-btn::before {
+
+        .royal-header::after {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            opacity: 0.8;
         }
-        
-        .submit-btn:hover::before {
-            left: 100%;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(229, 62, 62, 0.6);
-        }
-        
-        .submit-btn:active {
-            transform: translateY(-1px);
-        }
-        
-        /* Loading state for button */
-        .submit-btn.loading {
-            pointer-events: none;
-            opacity: 0.7;
-        }
-        
-        .submit-btn.loading::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border: 2px solid transparent;
-            border-top: 2px solid white;
+
+        .crown-logo {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto 50px;
             border-radius: 50%;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            animation: spin 1s linear infinite;
-        }
-        
-        /* Advanced Testimonials */
-        .testimonials {
-            background: var(--bg-light);
-            padding: 40px;
-            border-radius: 20px;
-            margin: 40px 0;
-        }
-        
-        .testimonial {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 25px 0;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            border-left: 5px solid var(--primary-color);
-            transform: scale(0.95);
-            opacity: 0;
-            animation: popIn 0.6s ease-out forwards;
-            position: relative;
-        }
-        
-        .testimonial:nth-child(2) { animation-delay: 0.2s; }
-        .testimonial:nth-child(3) { animation-delay: 0.4s; }
-        
-        @keyframes popIn {
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        
-        .testimonial::before {
-            content: '"';
-            font-size: 4em;
-            color: var(--primary-color);
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            opacity: 0.3;
-        }
-        
-        .testimonial-text {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            font-style: italic;
-            line-height: 1.6;
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            color: var(--primary-color);
-            font-size: 1.1em;
-        }
-        
-        .testimonial-role {
-            color: var(--text-light);
-            font-size: 0.95em;
-            margin-top: 5px;
-        }
-        
-        /* Trust Elements */
-        .trust-elements {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin: 30px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-        
-        .trust-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .trust-item {
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 50%, var(--dark-gold) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1em;
-            color: var(--text-light);
-            padding: 15px;
-            border-radius: 10px;
-            background: var(--bg-light);
-            transition: transform 0.3s ease;
+            box-shadow: 
+                0 40px 80px rgba(255, 215, 0, 0.4),
+                0 20px 40px rgba(0, 0, 0, 0.2),
+                inset 0 4px 8px rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            border: 4px solid rgba(255, 255, 255, 0.3);
         }
-        
-        .trust-item:hover {
+
+        .crown-logo::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: rotate 10s linear infinite;
+        }
+
+        .crown-icon {
+            font-size: 7rem;
+            color: var(--royal-blue);
+            z-index: 3;
+            position: relative;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-8px) rotate(1deg); }
+            50% { transform: translateY(-15px) rotate(0deg); }
+            75% { transform: translateY(-8px) rotate(-1deg); }
+        }
+
+        .royal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
+            letter-spacing: -3px;
+            position: relative;
+            z-index: 2;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .royal-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 400;
+            margin-bottom: 50px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+            line-height: 1.7;
+        }
+
+        .luxury-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            color: var(--royal-blue);
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 
+                0 20px 40px rgba(255, 215, 0, 0.5),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
+            position: relative;
+            z-index: 2;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .luxury-badge:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 
+                0 25px 50px rgba(255, 215, 0, 0.6),
+                inset 0 3px 6px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Premium Link Box */
+        .premium-link-box {
+            background: rgba(255, 255, 255, 0.2);
+            border: 3px solid rgba(255, 215, 0, 0.4);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 2;
+            backdrop-filter: blur(15px);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.1),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
+        }
+
+        .premium-link-box p {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            opacity: 0.95;
+            text-align: center;
+        }
+
+        /* Elite Sections */
+        .elite-section {
+            padding: 100px 80px;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.15);
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
+        }
+
+        .elite-section:nth-child(even) {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .elite-section:last-child {
+            border-bottom: none;
+        }
+
+        .elite-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            opacity: 0.8;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .section-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .diamond-number {
+            display: inline-flex;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            color: var(--royal-blue);
+            border-radius: 50%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            box-shadow: 
+                0 25px 50px rgba(255, 215, 0, 0.4),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diamond-number::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: rotate 8s linear infinite;
+        }
+
+        .elite-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: var(--royal-blue);
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .elite-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            color: var(--text-medium);
+            font-weight: 500;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+
+        /* Luxury Visuals */
+        .luxury-visual {
+            width: 100%;
+            max-width: 700px;
+            height: 450px;
+            margin: 50px auto;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 
+                0 40px 80px rgba(0, 0, 0, 0.2),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .luxury-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+            animation: pulse 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        .inline-luxury {
+            width: 350px;
+            height: 350px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            margin: 0 50px 40px 0;
+            float: left;
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.15),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .inline-luxury.right {
+            float: right;
+            margin: 0 0 40px 50px;
+        }
+
+        .inline-luxury::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: rotate 12s linear infinite;
+        }
+
+        /* Premium Typography */
+        .luxury-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            line-height: 2;
+            color: var(--text-royal);
+            margin-bottom: 35px;
+            text-align: justify;
+        }
+
+        .luxury-text.large {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--deep-blue);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .golden-highlight {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(255, 165, 0, 0.3) 100%);
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-weight: 800;
+            color: var(--royal-blue);
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Luxury Links */
+        .golden-link {
+            color: var(--dark-gold);
+            text-decoration: none;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-bottom: 3px solid var(--luxury-gold);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .golden-link:hover {
+            border-bottom-color: var(--accent-gold);
             transform: translateY(-2px);
         }
-        
-        .trust-item span {
-            margin-right: 10px;
-            font-size: 1.2em;
+
+        /* Royal Problem/Solution Boxes */
+        .royal-problem {
+            background: linear-gradient(135deg, #fef5e7 0%, #fed7aa 50%, #fdba74 100%);
+            border: 4px solid #f97316;
+            border-radius: 30px;
+            padding: 50px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 30px 60px rgba(249, 115, 22, 0.2),
+                inset 0 3px 6px rgba(255, 255, 255, 0.4);
         }
-        
-        /* Success Message */
-        .success-message {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--success-color);
-            color: white;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-            transform: translateX(400px);
-            transition: transform 0.3s ease;
-            z-index: 1000;
+
+        .royal-problem::before {
+            content: '⚠️';
+            font-size: 5rem;
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            opacity: 0.5;
+            animation: bounce 3s infinite;
         }
-        
-        .success-message.show {
-            transform: translateX(0);
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-8px); }
         }
-        
-        /* Exit Intent Popup */
-        .exit-popup {
-            position: fixed;
+
+        .royal-solution {
+            background: linear-gradient(135deg, #ecfdf5 0%, #a7f3d0 50%, #6ee7b7 100%);
+            border: 4px solid #10b981;
+            border-radius: 30px;
+            padding: 50px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 30px 60px rgba(16, 185, 129, 0.2),
+                inset 0 3px 6px rgba(255, 255, 255, 0.4);
+        }
+
+        .royal-solution::before {
+            content: '✅';
+            font-size: 5rem;
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            opacity: 0.5;
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.15); filter: brightness(1.2); }
+        }
+
+        .royal-box-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: var(--royal-blue);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Platinum Lists */
+        .platinum-list {
+            list-style: none;
+            padding: 0;
+            margin: 40px 0;
+        }
+
+        .platinum-list li {
+            padding: 25px 0;
+            padding-left: 80px;
+            position: relative;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .platinum-list li:hover {
+            padding-left: 90px;
+            background: rgba(255, 215, 0, 0.08);
+            border-radius: 15px;
+        }
+
+        .platinum-list li:last-child {
+            border-bottom: none;
+        }
+
+        .platinum-list li::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+            transition: all 0.4s ease;
+        }
+
+        .platinum-list li:hover::before {
+            transform: translateY(-50%) scale(1.2);
+            box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6);
+        }
+
+        .platinum-list.problems li::before {
+            background: linear-gradient(135deg, #fca5a5 0%, #ef4444 100%);
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+        }
+
+        .platinum-list.solutions li::before {
+            background: linear-gradient(135deg, #86efac 0%, #10b981 100%);
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .platinum-list.checklist li::before {
+            background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 100%);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Diamond Pillars Grid */
+        .diamond-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            margin: 80px 0;
+        }
+
+        .diamond-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 4px solid var(--luxury-gold);
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.1),
+                inset 0 3px 6px rgba(255, 255, 255, 0.6);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diamond-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, var(--luxury-gold) 0%, var(--accent-gold) 50%, var(--luxury-gold) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 4s ease-in-out infinite;
+        }
+
+        .diamond-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 
+                0 50px 100px rgba(0, 0, 0, 0.2),
+                0 0 40px rgba(255, 215, 0, 0.4),
+                inset 0 3px 6px rgba(255, 255, 255, 0.7);
+            border-color: var(--accent-gold);
+        }
+
+        .diamond-pillar-number {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            color: var(--royal-blue);
+            border-radius: 50%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 35px;
+            box-shadow: 
+                0 25px 50px rgba(255, 215, 0, 0.4),
+                inset 0 3px 6px rgba(255, 255, 255, 0.4);
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diamond-pillar-number::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: rotate 10s linear infinite;
+        }
+
+        .diamond-pillar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--royal-blue);
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .diamond-pillar-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-medium);
+        }
+
+        /* Royal Testimonials */
+        .royal-testimonial {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-left: 10px solid var(--luxury-gold);
+            border-radius: 25px;
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.1),
+                inset 0 3px 6px rgba(255, 255, 255, 0.6);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .royal-testimonial::before {
+            content: '';
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            display: none;
+            height: 3px;
+            background: linear-gradient(90deg, var(--luxury-gold) 0%, var(--accent-gold) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 5s ease-in-out infinite;
+        }
+
+        .royal-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            color: var(--text-medium);
+            margin-bottom: 35px;
+            line-height: 1.7;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .royal-quote::before {
+            content: '"';
+            font-size: 6rem;
+            color: var(--luxury-gold);
+            opacity: 0.7;
+            position: absolute;
+            left: -5px;
+            top: -20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .royal-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .royal-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 10000;
+            font-size: 2.5rem;
+            color: white;
+            margin-right: 30px;
+            border: 5px solid var(--luxury-gold);
+            box-shadow: 
+                0 15px 30px rgba(255, 215, 0, 0.4),
+                inset 0 3px 6px rgba(255, 255, 255, 0.3);
         }
-        
-        .exit-popup-content {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            max-width: 500px;
-            margin: 20px;
-            position: relative;
-            animation: slideInDown 0.3s ease-out;
+
+        .royal-author-details .name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--royal-blue);
+            margin-bottom: 8px;
         }
-        
-        @keyframes slideInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+
+        .royal-author-details .title {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            font-style: italic;
         }
-        
-        .exit-popup-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1.5em;
-            cursor: pointer;
-            color: var(--text-light);
-        }
-        
-        /* Mobile Optimizations */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            
-            .content-box, .form-section, .testimonials {
-                padding: 25px 20px;
-            }
-            
-            .main-headline {
-                font-size: 2.5em;
-            }
-            
-            .sub-headline {
-                font-size: 1.2em;
-            }
-            
-            .trust-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* Performance optimizations */
-        .lazy-load {
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
-        .lazy-load.loaded {
-            opacity: 1;
-        }
-        
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary-color);
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--secondary-color);
-        }
-    </style>
-</head>
-<body>
-    <!-- Loading Overlay -->
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="spinner"></div>
-    </div>
 
-    <!-- Success Message -->
-    <div class="success-message" id="successMessage">
-        ✅ Thank you! Your guide is being prepared...
-    </div>
-
-    <!-- Exit Intent Popup -->
-    <div class="exit-popup" id="exitPopup">
-        <div class="exit-popup-content">
-            <span class="exit-popup-close" onclick="closeExitPopup()">&times;</span>
-            <h3>Wait! Don't Miss Out! 🎺</h3>
-            <p>Before you go, grab your FREE Ultimate Practice Mute Buyer's Guide. It could save you hundreds of dollars!</p>
-            <button onclick="scrollToForm()" class="submit-btn" style="margin-top: 20px; width: auto; padding: 15px 30px;">
-                Get My Free Guide Now
-            </button>
-        </div>
-    </div>
-
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="floating-elements">
-                <div class="floating-note">🎵</div>
-                <div class="floating-note">🎶</div>
-                <div class="floating-note">♪</div>
-                <div class="floating-note">♫</div>
-            </div>
-            
-            <h1 class="main-headline">🎺 The Practice Mute That Changed Everything</h1>
-            <h2 class="sub-headline">
-                Free Guide: Why 90% of Practice Mutes Actually RUIN Your Playing<br>
-                <span style="font-size: 0.9em; opacity: 0.8;">(+ Secret 50dB Reduction Technology Revealed)</span>
-            </h2>
-        </header>
-
-        <!-- Main Content -->
-        <div class="content-box lazy-load">
-            <div class="hero-text">
-                Last month, I tested <strong>15 practice mutes</strong> with a sound engineer at <strong>Abbey Road Studios</strong>.
-            </div>
-            
-            <div class="hero-text">
-                <span style="background: linear-gradient(120deg, #fef5e7 0%, #fed7aa 100%); padding: 3px 8px; border-radius: 5px; font-weight: bold;">91% had a FATAL flaw</span> that makes practice sessions worse than useless:
-            </div>
-
-            <div class="problems">
-                <ul>
-                    <li>❌ They destroy your pitch accuracy (you practice out of tune)</li>
-                    <li>❌ They create back-pressure that ruins your embouchure</li>
-                    <li>❌ They sound so terrible you can't hear your mistakes</li>
-                </ul>
-            </div>
-
-            <div class="hero-text">
-                After <strong>3 years of acoustic research</strong>, we solved all three problems.
-            </div>
-
-            <div class="hero-text">
-                The result? <strong>Real Mute</strong> - the first practice mute that delivers perfect silent practice.
-            </div>
-
-            <h3 style="font-size: 1.8em; margin: 40px 0 25px 0; text-align: center; color: var(--primary-color);">What makes Real Mute different:</h3>
-
-            <div class="benefits">
-                <ul>
-                    <li>✅ <strong>50dB noise reduction</strong> (110dB to 60dB - quiet as normal conversation)</li>
-                    <li>✅ <strong>Acoustically perfect</strong> - maintains exact intonation</li>
-                    <li>✅ <strong>Zero back-pressure</strong> - feels like playing unmuted</li>
-                    <li>✅ <strong>Crystal clear sound</strong> - every mistake is audible</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Advanced Form Section -->
-        <div class="form-section lazy-load">
-            <h3 class="form-title">Get Your Free Ultimate Practice Mute Buyer's Guide</h3>
-            <p class="form-subtitle">Join 2,847+ musicians who discovered the truth about practice mutes</p>
-            
-            <div class="form-container">
-                <form name="practice-guide-leads" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thank-you">
-                    <!-- Hidden field required by Netlify -->
-                    <input type="hidden" name="form-name" value="practice-guide-leads" />
-                    
-                    <div class="form-group">
-                        <label for="email">📧 Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="firstname">👤 First Name</label>
-                        <input type="text" id="firstname" name="firstname" required placeholder="Enter your first name" autocomplete="given-name">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="challenge">🎯 Your Biggest Practice Challenge</label>
-                        <select id="challenge" name="challenge" required>
-                            <option value="">Select your biggest challenge...</option>
-                            <option value="quiet-space">Finding quiet practice space</option>
-                            <option value="intonation">Maintaining intonation</option>
-                            <option value="embouchure">Embouchure development</option>
-                            <option value="time">Time management</option>
-                            <option value="neighbors">Neighbor complaints</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Netlify reCAPTCHA -->
-                    <div data-netlify-recaptcha="true"></div>
-                    
-                    <button type="submit" class="submit-btn">
-                        🚀 Send Me The Free Guide (Takes 30 Seconds)
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Advanced Testimonials -->
-        <div class="testimonials lazy-load">
-            <h3 style="text-align: center; margin-bottom: 30px; font-size: 1.8em; color: var(--text-dark);">What Musicians Are Saying:</h3>
-            
-            <div class="testimonial">
-                <div class="testimonial-text">
-                    "This guide saved me $800 and countless hours of frustration. The science behind mute selection is mind-blowing! I had no idea I was practicing wrong notes for months."
-                </div>
-                <div class="testimonial-author">Sarah M.</div>
-                <div class="testimonial-role">Juilliard Student, Principal Trumpet</div>
-            </div>
-            
-            <div class="testimonial">
-                <div class="testimonial-text">
-                    "Finally, a mute that doesn't lie to me about my playing. The 50dB reduction is real - I can practice at midnight without waking my family."
-                </div>
-                <div class="testimonial-author">David L.</div>
-                <div class="testimonial-role">Professional Orchestra Player, 15+ years</div>
-            </div>
-            
-            <div class="testimonial">
-                <div class="testimonial-text">
-                    "As a music teacher, I've tested dozens of mutes. Real Mute is the only one I recommend to my students. Perfect intonation, zero back-pressure."
-                </div>
-                <div class="testimonial-author">Prof. Michael R.</div>
-                <div class="testimonial-role">Berklee College of Music, Brass Department</div>
-            </div>
-        </div>
-
-        <!-- Advanced Trust Elements -->
-        <div class="trust-elements lazy-load">
-            <h4 style="margin-bottom: 20px; color: var(--text-dark);">Trusted by Musicians Worldwide</h4>
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <span>📧</span> No spam. Unsubscribe anytime
-                </div>
-                <div class="trust-item">
-                    <span>🌍</span> Used by 2,847+ musicians globally
-                </div>
-                <div class="trust-item">
-                    <span>⭐</span> 4.9/5 star rating (347 reviews)
-                </div>
-                <div class="trust-item">
-                    <span>🎯</span> Trusted in 23+ countries
-                </div>
-                <div class="trust-item">
-                    <span>🔒</span> Your data is 100% secure
-                </div>
-                <div class="trust-item">
-                    <span>⚡</span> Instant delivery to inbox
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Advanced JavaScript -->
-    <script>
-        // Advanced Analytics & Marketing Automation
-        class AdvancedLandingPage {
-            constructor() {
-                this.startTime = Date.now();
-                this.scrollDepth = 0;
-                this.formInteractions = 0;
-                this.exitIntentShown = false;
-                this.init();
-            }
-            
-            init() {
-                this.removeLoadingOverlay();
-                this.setupEventTracking();
-                this.setupScrollTracking();
-                this.setupExitIntent();
-                this.setupLazyLoading();
-                this.setupFormValidation();
-                this.setupPerformanceTracking();
-            }
-            
-            removeLoadingOverlay() {
-                setTimeout(() => {
-                    document.getElementById('loadingOverlay').style.opacity = '0';
-                    setTimeout(() => {
-                        document.getElementById('loadingOverlay').style.display = 'none';
-                    }, 500);
-                }, 1000);
-            }
-            
-            setupEventTracking() {
-                // Track page engagement
-                setTimeout(() => this.trackEvent('page_engagement', {duration: 30}), 30000);
-                setTimeout(() => this.trackEvent('page_engagement', {duration: 60}), 60000);
-                setTimeout(() => this.trackEvent('page_engagement', {duration: 120}), 120000);
-                
-                // Track scroll milestones
-                let scrollMilestones = [25, 50, 75, 90];
-                window.addEventListener('scroll', () => {
-                    let scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-                    
-                    scrollMilestones.forEach(milestone => {
-                        if (scrollPercent >= milestone && !this[`milestone${milestone}`]) {
-                            this[`milestone${milestone}`] = true;
-                            this.trackEvent('scroll_milestone', {milestone: milestone});
-                        }
-                    });
-                });
-            }
-            
-            setupScrollTracking() {
-                window.addEventListener('scroll', () => {
-                    let scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-                    this.scrollDepth = Math.max(this.scrollDepth, scrollPercent);
-                });
-            }
-            
-            setupExitIntent() {
-                let exitIntentDelay = 5000; // Wait 5 seconds before enabling
-                
-                setTimeout(() => {
-                    document.addEventListener('mouseleave', (e) => {
-                        if (e.clientY <= 0 && !this.exitIntentShown) {
-                            this.showExitIntent();
-                        }
-                    });
-                }, exitIntentDelay);
-            }
-            
-            showExitIntent() {
-                this.exitIntentShown = true;
-                document.getElementById('exitPopup').style.display = 'flex';
-                this.trackEvent('exit_intent_shown');
-                
-                // Track if they engage with popup
-                document.querySelector('#exitPopup button').addEventListener('click', () => {
-                    this.trackEvent('exit_intent_converted');
-                });
-            }
-            
-            setupLazyLoading() {
-                const lazyElements = document.querySelectorAll('.lazy-load');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('loaded');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                });
-                
-                lazyElements.forEach(el => observer.observe(el));
-            }
-            
-            setupFormValidation() {
-                const inputs = document.querySelectorAll('input, select');
-                inputs.forEach(input => {
-                    input.addEventListener('focus', () => {
-                        this.formInteractions++;
-                        this.trackEvent('form_interaction', {field: input.name, interaction: this.formInteractions});
-                    });
-                    
-                    input.addEventListener('blur', () => {
-                        if (input.value) {
-                            this.trackEvent('form_field_completed', {field: input.name});
-                        }
-                    });
-                });
-            }
-            
-            setupPerformanceTracking() {
-                window.addEventListener('load', () => {
-                    setTimeout(() => {
-                        const navigation = performance.getEntriesByType('navigation')[0];
-                        const loadTime = navigation.loadEventEnd - navigation.loadEventStart;
-                        
-                        this.trackEvent('page_performance', {
-                            load_time: loadTime,
-                            dom_content_loaded: navigation.domContentLoadedEventEnd - navigation.domContentLoadedEventStart
-                        });
-                    }, 0);
-                });
-            }
-            
-            trackEvent(eventName, parameters = {}) {
-                // Google Analytics 4 Event Tracking
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', eventName, parameters);
-                }
-                
-                // Console log for debugging
-                console.log(`📊 Analytics Event: ${eventName}`, parameters);
-            }
-            
-            showSuccessMessage() {
-                const successMsg = document.getElementById('successMessage');
-                successMsg.classList.add('show');
-                setTimeout(() => {
-                    successMsg.classList.remove('show');
-                }, 5000);
-            }
-        }
-        
-        // Initialize Advanced Landing Page
-        const landingPage = new AdvancedLandingPage();
-        
-        // Advanced Form Submission
-        function handleAdvancedSubmit(event) {
-            event.preventDefault();
-            
-            const submitBtn = document.getElementById('submitBtn');
-            const email = document.getElementById('email').value;
-            const firstname = document.getElementById('firstname').value;
-            const challenge = document.getElementById('challenge').value;
-            
-            // Add loading state
-            submitBtn.classList.add('loading');
-            submitBtn.textContent = 'Sending...';
-            
-            // Track form submission attempt
-            landingPage.trackEvent('form_submit_attempt', {
-                email: btoa(email), // Base64 encode for privacy
-                challenge: challenge
-            });
-            
-            // Simulate form processing
-            setTimeout(() => {
-                // Track successful submission
-                landingPage.trackEvent('form_submit_success', {
-                    challenge: challenge,
-                    time_on_page: Date.now() - landingPage.startTime,
-                    scroll_depth: landingPage.scrollDepth,
-                    form_interactions: landingPage.formInteractions
-                });
-                
-                // Google Analytics Lead Event
-                gtag('event', 'generate_lead', {
-                    event_category: 'conversion',
-                    event_label: 'practice_guide_request',
-                    value: 47,
-                    currency: 'USD',
-                    custom_parameter: 'practice_mute_guide',
-                    challenge_type: challenge
-                });
-
-                // Facebook Pixel Lead Event (when configured)
-                if (typeof fbq !== 'undefined') {
-                    fbq('track', 'Lead', {
-                        content_name: 'Practice Mute Guide',
-                        value: 47.00,
-                        currency: 'USD'
-                    });
-                } else {
-                    console.log('📊 Lead Event: Practice Mute Guide downloaded');
-                }
-                
-                // Show success
-                landingPage.showSuccessMessage();
-                
-                // Reset form
-                document.getElementById('leadForm').reset();
-                submitBtn.classList.remove('loading');
-                submitBtn.textContent = '✅ Guide Sent! Check Your Email';
-                submitBtn.style.background = 'var(--success-color)';
-                
-                // Send to email service (replace with your actual endpoint)
-                sendToEmailService({email, firstname, challenge});
-                
-            }, 2000); // 2 second delay to simulate processing
-        }
-        
-        function sendToEmailService(data) {
-            // Demo: Log data to console (replace with real email service)
-            console.log('📧 Sending to email service:', data);
-            
-            // TODO: Replace with your actual email service integration
-            // Examples you can use:
-            
-            // Option 1: EmailJS (easiest)
-            /*
-            emailjs.send('your_service_id', 'your_template_id', {
-                to_email: data.email,
-                to_name: data.firstname,
-                challenge: data.challenge,
-                guide_link: 'https://yourdomain.com/practice-mute-guide.pdf'
-            }).then(function(response) {
-                console.log('✅ Email sent successfully:', response);
-            });
-            */
-            
-            // Option 2: Direct API call to your backend
-            /*
-            fetch('/api/send-guide', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(data)
-            }).then(response => response.json())
-              .then(result => console.log('✅ Guide sent:', result));
-            */
-            
-            // Option 3: Google Sheets API (for collecting leads)
-            /*
-            fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
-                method: 'POST',
-                body: JSON.stringify(data)
-            });
-            */
-            
-            // For now, just simulate success
-            setTimeout(() => {
-                console.log('✅ Simulated email delivery complete');
-            }, 1000);
-        }
-        
-        // Utility functions
-        function closeExitPopup() {
-            document.getElementById('exitPopup').style.display = 'none';
-            landingPage.trackEvent('exit_intent_closed');
-        }
-        
-        function scrollToForm() {
-            document.querySelector('.form-section').scrollIntoView({behavior: 'smooth'});
-            closeExitPopup();
-            landingPage.trackEvent('exit_intent_scroll_to_form');
-        }
-        
-        // Add click tracking to all buttons and links
-        document.addEventListener('click', (e) => {
-            if (e.target.tagName === 'BUTTON' || e.target.tagName === 'A') {
-                landingPage.trackEvent('click', {
-                    element: e.target.tagName.toLowerCase(),
-                    text: e.target.textContent.substring(0, 50),
-                    url: e.target.href || 'button'
-                });
-            }
-        });
-        
-        // Track page unload
-        window.addEventListener('beforeunload', () => {
-            landingPage.trackEvent('page_exit', {
-                time_on_page: Date.now() - landingPage.startTime,
-                scroll_depth: landingPage.scrollDepth,
-                form_interactions: landingPage.formInteractions
-            });
-        });
-
-        // Enhanced Google Analytics Event Tracking
-        document.addEventListener('DOMContentLoaded', function() {
-            // Track form field interactions
-            const formFields = ['email', 'firstname', 'challenge'];
-            formFields.forEach(fieldId => {
-                const field = document.getElementById(fieldId);
-                if (field) {
-                    field.addEventListener('focus', function() {
-                        gtag('event', 'form_field_focus', {
-                            event_category: 'form_interaction',
-                            event_label: fieldId,
-                            custom_parameter: 'practice_mute_guide'
-                        });
-                    });
-                    
-                    field.addEventListener('blur', function() {
-                        if (field.value.length > 0) {
-                            gtag('event', 'form_field_complete', {
-                                event_category: 'form_interaction',
-                                event_label: fieldId,
-                                custom_parameter: 'practice_mute_guide'
-                            });
-                        }
-                    });
-                }
-            });
-
-            // Track button clicks
-            document.querySelectorAll('button, .submit-btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    gtag('event', 'button_click', {
-                        event_category: 'engagement',
-                        event_label: this.textContent.substring(0, 50),
-                        custom_parameter: 'practice_mute_guide'
-                    });
-                });
-            });
-
-            // Track scroll milestones with GA4
-            let scrollMilestones = [25, 50, 75, 90];
-            let trackedMilestones = [];
-            
-            window.addEventListener('scroll', function() {
-                let scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-                
-                scrollMilestones.forEach(milestone => {
-                    if (scrollPercent >= milestone && !trackedMilestones.includes(milestone)) {
-                        trackedMilestones.push(milestone);
-                        gtag('event', 'scroll', {
-                            event_category: 'engagement',
-                            event_label: milestone + '_percent',
-                            value: milestone,
-                            custom_parameter: 'practice_mute_guide'
-                        });
-                    }
-                });
-            });
-
-            // Track time on page milestones
-            [30, 60, 120, 300].forEach(seconds => {
-                setTimeout(() => {
-                    gtag('event', 'timing', {
-                        event_category: 'engagement',
-                        event_label: seconds + '_seconds_on_page',
-                        value: seconds,
-                        custom_parameter: 'practice_mute_guide'
-                    });
-                }, seconds * 1000);
-            });
-
-            // Track exit intent popup interactions
-            const exitPopup = document.getElementById('exitPopup');
-            if (exitPopup) {
-                const observer = new MutationObserver(function(mutations) {
-                    mutations.forEach(function(mutation) {
-                        if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-                            if (exitPopup.style.display === 'flex') {
-                                gtag('event', 'exit_intent_popup_shown', {
-                                    event_category: 'conversion_opportunity',
-                                    event_label: 'exit_intent_triggered',
-                                    custom_parameter: 'practice_mute_guide'
-                                });
-                            }
-                        }
-                    });
-                });
-                observer.observe(exitPopup, { attributes: true });
-            }
-        });
-    </script>
-</body>
-</html>
+        /* Elite Pro-Tips */
